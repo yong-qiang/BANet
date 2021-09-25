@@ -36,7 +36,7 @@ model = dict(
             num_convs=1,
             concat_input=False,
             dropout_ratio=0,
-            num_classes=1,
+            num_classes=2,
             use_boundary=True,
             norm_cfg=norm_cfg,
             #sampler=dict(type='OHEMPixelSampler', thresh=0.9, min_kept=131072),
