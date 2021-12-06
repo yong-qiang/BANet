@@ -103,8 +103,9 @@ class GAB(nn.Module):
         y3 = self.conv1x1_1(y3)
         y3 = self.sigmoid1(y3)
 
-        y1_ = x2_h*y1+x2_w*y1
-        y1_1 = y3*y1_
+        y1_1 = y3*y1
+        y1_ = x2_h*y1_1+x2_w*y1_1
+
 
         y1_out = y1_1+y1
         return F.relu(y1_out) 
